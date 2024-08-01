@@ -9,21 +9,19 @@
 
 
 
-JWT
-================================
+jwt-operation
+---------------------
 
 
-HS256:
+#HS256:
 
-A random string as a secret for HS256 (HMAC using SHA-256). 
-
-
+  A random string as a secret for HS256 (HMAC using SHA-256). 
 
 
 
-RS256:
+#RS256:
 
-RS256 (RSA Signature with SHA-256) uses asymmetric encryption with a private key to sign the JWT and a public key to validate it.
+  RS256 (RSA Signature with SHA-256) uses asymmetric encryption with a private key to sign the JWT and a public key to validate it.
 
 Step to create:
 
