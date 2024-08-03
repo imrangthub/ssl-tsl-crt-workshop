@@ -18,9 +18,9 @@
 #  port: 8282
 #  ssl:
 #    enabled: true
-#    key-alias: cmrootca-0
-#    key-store: classpath:cm-auto-global_truststore.jks
-#    key-store-password: N4FSJGqzJSbsp5gOYjVreQZI6qzAtbM2mh1KpLOburI
+#    key-alias: spapp1
+#    key-store: classpath:myspringboot.jks
+#    key-store-password: appsecpass
 #    key-store-type: JKS
 #    key-store-provider: SUN
 #    
