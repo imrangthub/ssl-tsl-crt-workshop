@@ -1,27 +1,35 @@
+#================================
+#        PKCS12
+#================================
+#server:
+#  port: 8282
+#  ssl:
+#    enabled: true
+#    key-alias: myapp
+#    key-store: classpath:myapp-keystore.p12
+#    key-store-password: secret
+#    key-store-type: PKCS12
+
+
+#================================
+#        JKS
+#================================
+#server:
+#  port: 8282
+#  ssl:
+#    enabled: true
+#    key-alias: cmrootca-0
+#    key-store: classpath:cm-auto-global_truststore.jks
+#    key-store-password: N4FSJGqzJSbsp5gOYjVreQZI6qzAtbM2mh1KpLOburI
+#    key-store-type: JKS
+#    key-store-provider: SUN
+#    
+
+
+
+
 server:
   port: 8282
-  ssl:
-    enabled: true
-    key-alias: myapp
-    key-store: classpath:myapp-keystore.p12
-    key-store-password: secret
-    key-store-type: PKCS12
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -32,6 +40,11 @@ management:
     web:
       exposure:
         include: "*"
+
+
+
+
+
 
 
 
