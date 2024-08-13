@@ -111,5 +111,33 @@ Step to create:
 
 
 
+Verify Self-signed Ceftificated | Check Server Certificate
+------------------------------------------------------------------
+
+Step1: Get server certificate, and copy to a file (server.crt) and save it
+
+       =>echo | openssl s_client -connect 10.13.48.90:7070 -showcerts
+
+Step2:  Extract Subject and Issuer and Compare Subject and Issuer with each other
+
+      =>openssl x509 -in server.crt -noout -subject -issuer
+      =>openssl x509 -in my-client.crt -noout -subject -issuer
+
+Step3:You can also Validate the public keys to ensure they match, Extract Public Key and Compare Public Key.
+
+    =>openssl x509 -in server.crt -pubkey -noout > server_pubkey.pem
+    =>openssl x509 -in my-client.crt -pubkey -noout > local_pubkey.pem
+    =>diff server_pubkey.pem local_pubkey.pem
+    If there’s no output from diff, the public keys match.
+
+
+Step4: Validate Certificate Key Pair
+
+      =>openssl rsa -in my-key.key -pubout > key_pubkey.pem
+      =>openssl x509 -in my-client.crt -pubkey -noout > cert_pubkey.pem
+      =>diff key_pubkey.pem cert_pubkey.pem
+
+
+
 
         
