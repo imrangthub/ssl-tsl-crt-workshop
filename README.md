@@ -116,7 +116,7 @@ Verify Self-signed Ceftificated | Check Server Certificate
 
 Step1: Get server certificate, and copy to a file (server.crt) and save it
 
-       =>echo | openssl s_client -connect 10.13.48.90:7070 -showcerts
+       =>echo | openssl s_client -connect 198.168.2.2:9090 -showcerts
 
 Step2:  Extract Subject and Issuer and Compare Subject and Issuer with each other
 
