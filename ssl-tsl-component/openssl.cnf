@@ -1,0 +1,21 @@
+[ req ]
+distinguished_name = req_distinguished_name
+req_extensions = req_ext
+prompt = no
+
+[ req_distinguished_name ]
+C = bd
+ST = Dhaka
+L = Gulshan
+O = GoroSoft
+OU = Software
+CN = 192.168.1.5
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+IP.1 = 192.168.1.5
+DNS.1 = localhost
+DNS.2 = madbarsoft.com
+
